@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "wonhung",
+  "version": "3.0.0",
+  "name": "Wonhung",
+  "description": "A Fabric utility mod for Minecraft.",
+  "authors": [
+    "WonWolUng",
+    "Crabezu10"
+  ],
+  "contact": {},
+  "license": "AGPL-3.0-or-later",
+  "icon": "assets/wonhung/icon.png",
+  "environment": "client",
+  "accessWidener": "wonhung.accesswidener",
+  "entrypoints": {
+    "client": [
+      "dev.wonhung.Wonhung",
+      "dev.wonhung.extras.WonhungExtras",
+      "dev.wonhung.extras.AutoRegearEntrypoint",
+      "dev.wonhung.extras.AutoMaceEntrypoint",
+      "dev.wonhung.extras.TargetCatEntrypoint",
+      "dev.wonhung.features.modules.funny.FuEZ"
+    ],
+    "main": [
+      "dev.wonhung.Wonhung"
+    ]
+  },
+  "mixins": [
+    "wonhung.mixins.json",
+    "wonhung.extras.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "fabric": "*",
+    "minecraft": "1.21.11"
+  },
+  "jars": [
+    {
+      "file": "META-INF/jars/catformat-core-2.1.0.jar"
+    },
+    {
+      "file": "META-INF/jars/catformat-fabric-2.1.0.jar"
+    },
+    {
+      "file": "META-INF/jars/discord-ipc-1.1.jar"
+    }
+  ]
+}
